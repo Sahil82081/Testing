@@ -1,0 +1,204 @@
+@media only screen and (max-width: 800px) {
+    .logo img {
+        height: 23px;
+    }
+
+    #language_logo {
+        height: 10px;
+    }
+
+    .nav_btn {
+        gap: 5px;
+    }
+
+    .language {
+        padding: 6px 4px;
+    }
+
+    .nav_btn select {
+        font-size: 10px;
+        padding: 0 4px 0 0;
+
+    }
+
+    .nav_btn button {
+        font-size: 10px;
+        padding: 0px 12px;
+    }
+
+    .container {
+        padding: 61px 11px 0 11px;
+    }
+
+    .container span:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .container span:nth-child(2) {
+        font-size: 6vw;
+        ;
+    }
+
+    .container span:nth-child(3) {
+        font-size: 6vw;
+    }
+
+    .in_btn button {
+        padding: 2px 6px;
+        font-size: 13px;
+    }
+
+    .in_btn button img {
+        height: 30px;
+        width: 23px;
+    }
+
+    .in_btn {
+        display: flex;
+        gap: 13px;
+        width: 90%;
+        border-radius: 6px;
+    }
+
+    .in_btn input {
+        font-size: 15px;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 1800px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .discription {
+        text-align: center;
+        align-items: center;
+    }
+
+
+
+    #tv_frame {
+        height: 230px;
+    }
+
+    #tv_content {
+        width: 379px;
+        height: 303px;
+    }
+
+    .video {
+        width: 100%;
+    }
+
+    .demo_videos video {
+        height: 435px;
+        width: 88%;
+    }
+
+    .discription span:nth-child(1) {
+        font-size: 19px;
+        font-weight: bold;
+        font-family: 'Ubuntu', sans-serif;
+        width: 835px;
+    }
+
+    .discription p {
+        width: 37%;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #strangerthing {
+
+        height: 355px;
+    }
+
+    .book_download_logo {
+        width: 320px;
+        gap: 15px;
+        margin-bottom: 23px;
+    }
+
+    .sentence {
+        font-size: 15px;
+    }
+
+    .content2_images {
+        align-items: end;
+        justify-content: center;
+        margin-bottom: 38px;
+    }
+
+    #book {
+        height: 61px;
+    }
+
+    #children_img {
+        height: 250px;
+    }
+
+    #iphone_frame {
+        width: 371px;
+        height: 335px;
+    }
+
+    #video3 {
+        width: 220px;
+    }
+
+    .apple_monitor {
+        margin-bottom: 119px;
+    }
+
+    .info {
+        width: 85%;
+    }
+
+    .info h2 {
+        font-size: 23px;
+    }
+
+    .info_box1 {
+        font-size: 17px;
+        padding: 6px 18px;
+    }
+
+    .info_box1 img {
+        height: 25px;
+    }
+
+
+
+    .email_for_membership h2 {
+        text-align: center;
+        font-size: 13px;
+        width: 50%;
+        padding: 0 19px;
+    }
+
+    .input_email input {
+        font-size: 14px;
+        color: white;
+        width: 57%;
+    }
+
+    .input_email button {
+        padding: 12px 10px;
+        font-size: 11px;
+    }
+
+    .links {
+        width: 85%;
+    }
+
+    .links div {
+        font-size: 14px;
+    }
+
+
+}
