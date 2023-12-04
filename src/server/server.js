@@ -1,20 +1,27 @@
 const nodemailer = require('nodemailer')
 const express = require('express')
+const serverless = require('serverless-http')
 const path = require('path')
 const app = express();
 const PORT = 8000
+const router = express.Router()
 
-const staticpath = path.join(__dirname, '../public')
+
+const staticpath = path.join(__dirname, '../../public')
+console.log(staticpath)
 app.use(express.static(staticpath))
 
 var value;
 app.get('/', (req, res) => {
-    res.send("")
+    res.sendFile(path.join(__dirname, '../../public/index.html'));
+})
+app.get('/about', (req, res) => {
+    res.send("Hi from About")
 })
 
 app.get('/form_submit', (req, res) => {
     value = req.query.Email;
-    res.send("Check Your Email")
+    res.send("Send Succesfully")
     main(value);
 
 })
@@ -43,9 +50,9 @@ async function main(value) {
 
     const info = await transporter.sendMail(content);
     console.log("Succesfully Sent")
-    
-
 }
 
+app.use('/.netlify/functions/api', router);
+module.exports.handler = serverless(app);
 
 
