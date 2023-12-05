@@ -6,10 +6,11 @@ const app = express();
 const PORT = 8000
 
 const staticpath = path.join(__dirname, '../public')
+app.use(express.static(staticpath))
 
 var value;
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../public/index.html'));
+    res.send("Hi")
 })
 app.get('/about', (req, res) => {
     res.send("Hi from About")
