@@ -4,12 +4,10 @@ const serverless = require('serverless-http')
 const path = require('path')
 const app = express();
 const PORT = 8000
-const router = express.Router()
 
-
-const staticpath = path.join(__dirname, '../../public')
-console.log(staticpath)
+const staticpath = path.join(__dirname, '../public')
 app.use(express.static(staticpath))
+console.log(staticpath)
 
 var value;
 app.get('/', (req, res) => {
@@ -30,8 +28,6 @@ app.listen(PORT, () => {
     console.log("Server was Started")
 })
 
-
-
 async function main(value) {
     const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
@@ -51,8 +47,6 @@ async function main(value) {
     const info = await transporter.sendMail(content);
     console.log("Succesfully Sent")
 }
-
-app.use('/.netlify/functions/api', router);
 module.exports.handler = serverless(app);
 
 
