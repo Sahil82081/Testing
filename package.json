@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server.js",
-    "build": "npm install",
+    "start": "NODE_ENV=production node src/server.js",
+    "build": "npm install && echo 'Build complete'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "netlify deploy --prod"
   }
+  
   ,
   "author": "Sahil Kumbharkar",
   "license": "ISC",
