@@ -1,5 +1,6 @@
 [build]
-  command = "npm run start && npm run build"
+  command = "npm run build"
+  command = "npm run start"
   functions = "netlify/functions"
 
 [dev]
