@@ -1,8 +1,8 @@
 [build]
-  command = "npm run build"  # Modify this if you have a build script
+  command = "npm run build"
 
 [functions]
-  directory = "functions"  # Specify the directory where Netlify functions are located
+  directory = "netlify/functions"  
 
 [[redirects]]
   from = "/*"
