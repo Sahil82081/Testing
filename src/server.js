@@ -6,8 +6,6 @@ const app = express();
 const PORT = 8000
 
 const staticpath = path.join(__dirname, '../public')
-app.use(express.static(staticpath))
-console.log(staticpath)
 
 var value;
 app.get('/', (req, res) => {
