@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && npm start"
+  command = "npm build && npm start"
 
 [functions]
   directory = "netlify/functions"
