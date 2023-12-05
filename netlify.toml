@@ -4,3 +4,8 @@
 
 [dev]
   command = "npm start"
+
+[[redirects]]
+  from = "/old-url"
+  to = "/new-url"
+  status = 301
