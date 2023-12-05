@@ -3,16 +3,4 @@
   command = "npm run build"
 
 [functions]
-  directory = "netlify/functions"  
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-[headers]
-  "/*"
-  X-Frame-Options = "DENY"
-  X-XSS-Protection = "1; mode=block"
-  X-Content-Type-Options = "nosniff"
-  Referrer-Policy = "no-referrer-when-downgrade"
+  directory = "netlify/functions"
