@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": " node src/app.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "v20.10.0"
   },
   "author": "Sahil Kumbharkar",
   "license": "ISC",
