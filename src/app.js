@@ -3,7 +3,7 @@ const express = require('express')
 const serverless = require('serverless-http')
 const path = require('path')
 const app = express();
-const PORT = 8000
+const PORT = process.env.PORT || 8000
 
 const staticpath = path.join(__dirname, '../public')
 app.use(express.static(staticpath))
